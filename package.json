@@ -1,0 +1,22 @@
+{
+  "name": "learning-javascript",
+  "version": "1.0.0",
+  "description": "project to learn javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elivives/learning-javascript.git"
+  },
+  "author": "elivives",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elivives/learning-javascript/issues"
+  },
+  "homepage": "https://github.com/elivives/learning-javascript#readme",
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  }
+}
