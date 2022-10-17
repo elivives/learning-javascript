@@ -17,4 +17,12 @@ describe('introduction suit', function(){
 
         assert.equal(expectedMyAge, 25)
     })
+
+    it('c) return your first name, last name and your age in an array', function(){
+        var expectedMyNameAndAge = []
+        
+        expectedMyNameAndAge = intro.getMyNameLastNameAndAgeArray()
+
+        assert.deepEqual(expectedMyNameAndAge, ['Elisabet', 'Vives', 25])
+    })
 })
