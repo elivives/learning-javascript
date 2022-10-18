@@ -41,7 +41,17 @@ describe('introduction suit', function(){
 
         expectedNumber = intro.getLargestNumber(a, b)
 
-        assert.equal(expectedNumber, 30)
-        
+        assert.equal(expectedNumber, 30)      
     })
+
+    it('f) return condition to consider the possibility that the two numbers are true:', function(){
+        var a = 30
+        var b = 30
+        var expectedEqual = false
+
+        expectedEqual = intro.numbertsAreEqual(a, b)
+
+        assert.equal(expectedEqual, true)
+    })
+  
 })

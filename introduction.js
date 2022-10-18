@@ -18,6 +18,13 @@ const intro = {
             return a
         }
     },
+    numbertsAreEqual(a, b) {
+        if (a == b) {
+            return true
+        } else {
+            return false
+        }
+    },
 }
 
 module.exports = intro
