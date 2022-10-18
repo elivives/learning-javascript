@@ -26,11 +26,22 @@ describe('introduction suit', function(){
         assert.deepEqual(expectedMyNameAndAge, ['Elisabet', 'Vives', 25])
     })
 
-    it(' return your name and your age inside an object', function(){
+    it('d) return your name and your age inside an object', function(){
         var expectedPerson = {}
 
         expectedPerson = intro.getPerson()
 
         assert.deepEqual(expectedPerson, {name: 'Elisabet', age: 24})
+    })
+
+    it('e) returns conditional structure the largest number between two numbers', function() {
+        var a = 10
+        var b = 30
+        var expectedNumber = 0
+
+        expectedNumber = intro.getLargestNumber(a, b)
+
+        assert.equal(expectedNumber, 30)
+        
     })
 })
