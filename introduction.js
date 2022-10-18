@@ -10,7 +10,14 @@ const intro = {
     },
     getPerson() {
         return {name: 'Elisabet', age: 24}
-    }
+    },
+    getLargestNumber(a, b) {
+        if (a < b) {
+            return b
+        } else {
+            return a
+        }
+    },
 }
 
 module.exports = intro
