@@ -24,7 +24,15 @@ const intro = {
         } else {
             return false
         }
-    },
+    },personalDataValue(name, age) {
+        if (name == 'Marta' && age == 23) {
+            return true
+        } else {
+            return false
+        }
+    }, 
 }
+
+
 
 module.exports = intro
