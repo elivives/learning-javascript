@@ -54,7 +54,7 @@ describe('introduction suit', function(){
         assert.equal(expectedEqual, true)
     })
     
-    it('e) return your name and your age and create a conditional show an error', function(){
+    it('g) return your name and your age and create a conditional show an error', function(){
         var name = 'Marta'
         var age = 23
         var personalData = false
