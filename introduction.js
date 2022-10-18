@@ -7,6 +7,9 @@ const intro = {
     },
     getMyNameLastNameAndAgeArray() {
         return ['Elisabet', 'Vives', 25]
+    },
+    getPerson() {
+        return {name: 'Elisabet', age: 24}
     }
 }
 

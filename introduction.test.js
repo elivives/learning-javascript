@@ -25,4 +25,12 @@ describe('introduction suit', function(){
 
         assert.deepEqual(expectedMyNameAndAge, ['Elisabet', 'Vives', 25])
     })
+
+    it(' return your name and your age inside an object', function(){
+        var expectedPerson = {}
+
+        expectedPerson = intro.getPerson()
+
+        assert.deepEqual(expectedPerson, {name: 'Elisabet', age: 24})
+    })
 })
