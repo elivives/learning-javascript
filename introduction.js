@@ -24,7 +24,8 @@ const intro = {
         } else {
             return false
         }
-    },personalDataValue(name, age) {
+    },
+    personalDataValue(name, age) {
         if (name == 'Marta' && age == 23) {
             return true
         } else {
