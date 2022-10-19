@@ -24,6 +24,12 @@ const methods = {
         var surnameInitial = name.slice(surname, surname + 1)
 
         return `${nameInitial}.${surnameInitial}`
+    },
+    getNameSeparate(name) {
+        var nameUpercase = name.toUpperCase()
+        var nameArray = nameUpercase.split('')
+         
+        return nameArray.join('/ ')
     }
 }
 

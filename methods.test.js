@@ -75,6 +75,16 @@ describe('methods suit', function(){
         expectedInitial = methods.getYourInitial(name)
 
         assert.equal(expectedInitial, 'E.V')
+    })
 
+    // ARRAY
+
+    it('a) show your name and separating each letter by "/"', function(){
+        var name = 'Elisabet'
+        var espectedNameArray = []
+
+        espectedNameArray = methods.getNameSeparate(name)
+
+        assert.equal(espectedNameArray, 'E/ L/ I/ S/ A/ B/ E/ T')
     })
 })
