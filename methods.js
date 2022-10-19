@@ -4,6 +4,9 @@ const methods = {
     },
     posicionLastname(name) {
         return name.indexOf(' ')
+    },
+    isName(name) {
+        return name.slice(0, name.indexOf(' '))
     }
 }
 
