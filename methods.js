@@ -17,6 +17,13 @@ const methods = {
     getYourSurnameUppercase(name) {
         var surname = name.substr(name.indexOf(' ') + 1)
         return surname = surname.toUpperCase()
+    },
+    getYourInitial(name) {
+        var nameInitial = name.slice(0, 1)
+        var surname = name.indexOf(' ') + 1
+        var surnameInitial = name.slice(surname, surname + 1)
+
+        return `${nameInitial}.${surnameInitial}`
     }
 }
 

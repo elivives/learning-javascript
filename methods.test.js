@@ -67,4 +67,14 @@ describe('methods suit', function(){
 
         assert.equal(expectetlastname, 'VIVES')
     })
+
+    it('g) select the initial of your name and surname', function(){
+        var name = 'Elisabet Vives'
+        var expectedInitial = ''
+
+        expectedInitial = methods.getYourInitial(name)
+
+        assert.equal(expectedInitial, 'E.V')
+
+    })
 })
