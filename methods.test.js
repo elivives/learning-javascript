@@ -40,4 +40,13 @@ describe('methods suit', function(){
 
         assert.equal(expectedName, 'Marta')
     })
+
+    it('d) Show name and lastname, and add lastname', function(){
+        var name = 'Marta Vazquez'
+        var expectedNameAndLastname = ''
+
+        expectedNameAndLastname = methods.getNameAndLastname(name)
+
+        assert.equal(expectedNameAndLastname, "Marta Vazquez, Vazquez")
+    })
 })
