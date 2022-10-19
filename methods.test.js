@@ -14,4 +14,21 @@ describe('methods suit', function(){
         assert.equal(expectedNameNumbers, 5)
     })
 
+    it('b) Add the lastname said position in string', function(){
+        var name = "Marta Vazquez"
+        var expectedLastname = 0
+
+        expectedLastname = methods.posicionLastname(name)
+
+        assert.equal(expectedLastname, 5)
+    })
+
+    it('b-1.- Add the lastname said position in string', function(){
+        var name = "Joan Puig"
+        var expectedLastname = 0
+
+        expectedLastname = methods.posicionLastname(name)
+
+        assert.equal(expectedLastname, 4)
+    })
 })
