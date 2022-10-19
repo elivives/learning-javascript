@@ -58,4 +58,13 @@ describe('methods suit', function(){
 
         assert.equal(expectedName, 'Ms. Elisabet')
     })
+
+    it('f) transform it to UPPERCASE your surname', function(){
+        var name = 'Elisabet Vives'
+        var expectetlastname = ''
+
+        expectetlastname = methods.getYourSurnameUppercase(name)
+
+        assert.equal(expectetlastname, 'VIVES')
+    })
 })

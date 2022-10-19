@@ -13,6 +13,10 @@ const methods = {
     },
     isYourName(name) {
         return 'Ms.' + ' ' + name.substr(0, name.indexOf(' '))
+    },
+    getYourSurnameUppercase(name) {
+        var surname = name.substr(name.indexOf(' ') + 1)
+        return surname = surname.toUpperCase()
     }
 }
 
