@@ -31,4 +31,13 @@ describe('methods suit', function(){
 
         assert.equal(expectedLastname, 4)
     })
+
+    it('c) show only name', function(){
+        var name ='Marta Vazquez'
+        var expectedName = ''
+
+        expectedName = methods.isName(name)
+
+        assert.equal(expectedName, 'Marta')
+    })
 })
