@@ -23,7 +23,7 @@ const methods = {
         var surname = name.indexOf(' ') + 1
         var surnameInitial = name.slice(surname, surname + 1)
 
-        return nameInitial + '.' + surnameInitial
+        return `${nameInitial}.${surnameInitial}`
     }
 }
 
