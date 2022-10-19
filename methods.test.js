@@ -42,21 +42,11 @@ describe('methods suit', function(){
     })
 
     it('d) Show name and lastname, and add lastname', function(){
-        var name ='Marta Vazquez'
+        var name = 'Marta Vazquez'
         var expectedNameAndLastname = ''
 
         expectedNameAndLastname = methods.getNameAndLastname(name)
 
         assert.equal(expectedNameAndLastname, "Marta Vazquez, Vazquez")
-    })
-
-    it('d-1) Show name and lastname, and add lastname', function(){
-        var name = 'Joan Puig'
-        var expectedNameAndLastname = ''
-
-        expectedNameAndLastname = methods.getNameAndLastname(name)
-
-        assert.equal(expectedNameAndLastname, 'Joan Puig, Puig')
-
     })
 })
