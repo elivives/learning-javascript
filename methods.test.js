@@ -49,4 +49,13 @@ describe('methods suit', function(){
 
         assert.equal(expectedNameAndLastname, "Marta Vazquez, Vazquez")
     })
+
+    it('e) Change your name for Mr./Ms', function(){
+        var name = 'Elisabet Vives'
+        var expectedName = ''
+
+        expectedName = methods.isYourName(name)
+
+        assert.equal(expectedName, 'Ms. Elisabet')
+    })
 })

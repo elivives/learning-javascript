@@ -10,6 +10,9 @@ const methods = {
     },
     getNameAndLastname(name) {
         return name + ', ' + name.substr(name.indexOf(' ') +1)
+    },
+    isYourName(name) {
+        return 'Ms.' + ' ' + name.substr(0, name.indexOf(' '))
     }
 }
 
