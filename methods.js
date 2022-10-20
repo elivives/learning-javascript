@@ -36,7 +36,7 @@ const methods = {
         var surnameUpperCase = surname.toUpperCase()
         var surnameArray = surnameUpperCase.split('')
 
-        return surnameArray.join('| ', +1)
+        return surnameArray.join('| ')
     }
 }
 
