@@ -87,4 +87,13 @@ describe('methods suit', function(){
 
         assert.equal(espectedNameArray, 'E/ L/ I/ S/ A/ B/ E/ T')
     })
+
+    it('b) show you surname separating each letter by "|"', function() {
+        var name = 'Elisabet Vives'
+        var espectedSurnameArray = []
+
+        espectedSurnameArray = methods.getSurnameSeparate(name)
+
+        assert.equal(espectedSurnameArray, 'V| I| V| E| S')
+    })
 })
