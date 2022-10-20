@@ -26,10 +26,17 @@ const methods = {
         return `${nameInitial}.${surnameInitial}`
     },
     getNameSeparate(name) {
-        var nameUpercase = name.toUpperCase()
-        var nameArray = nameUpercase.split('')
+        var nameUppercase = name.toUpperCase()
+        var nameArray = nameUppercase.split('')
          
         return nameArray.join('/ ')
+    },
+    getSurnameSeparate(name) {
+        var surname = name.substr(name.indexOf(' ') +1)
+        var surnameUpperCase = surname.toUpperCase()
+        var surnameArray = surnameUpperCase.split('')
+
+        return surnameArray.join('| ', +1)
     }
 }
 
