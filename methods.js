@@ -55,6 +55,25 @@ const methods = {
         }
         return letters    
     },
+    getSurnamePosition(name) {
+        var surnameFirst = name.slice(name.indexOf(' ') +1)
+        var surnameUpperCase = surnameFirst.toUpperCase()
+        var letters = ''
+        var sign = 'º'
+        for (let i = 0; i < surnameUpperCase.length; i++) {
+            var num = i + 1
+            var coma 
+            if (num == surnameUpperCase.length) {
+                coma = ''
+            }   else {
+                coma = ', '
+            }
+            letters = letters + num + sign + surnameUpperCase.substr(i,1) + coma
+        }
+        return letters
+    }
+
+
 }
         
 
