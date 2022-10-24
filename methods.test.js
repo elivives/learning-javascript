@@ -105,4 +105,13 @@ describe('methods suit', function(){
 
         assert.equal(namePosition, '1ºE, 2ºL, 3ºI, 4ºS, 5ºA, 6ºB, 7ºE, 8ºT')
     })
+
+    it('d) Show each letter of your surname with its position', function() {
+        var name = 'Elisabet Vives'
+        var surnamePosition = ''
+
+        surnamePosition = methods.getSurnamePosition(name)
+
+        assert.equal(surnamePosition, '1ºV, 2ºI, 3ºV, 4ºE, 5ºS')
+    })
 })
