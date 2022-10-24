@@ -37,7 +37,25 @@ const methods = {
         var surnameArray = surnameUpperCase.split('')
 
         return surnameArray.join('| ')
-    }
+    },
+    getNamePosition(name) {
+        var nameFirst = name.slice(0, name.indexOf(' '))
+        var nameUppercase = nameFirst.toUpperCase()
+        var letters = ''
+        var sign = 'º'
+        for (let i = 0; i < nameUppercase.length; i++) {
+           var num = i + 1
+           var coma 
+           if (num == nameUppercase.length) { 
+               coma = ''
+            } else {
+                coma = ', '
+            }
+            letters = letters + num + sign + nameUppercase.substr(i,1) + coma
+        }
+        return letters    
+    },
 }
+        
 
 module.exports = methods
