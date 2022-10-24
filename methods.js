@@ -62,10 +62,8 @@ const methods = {
         var sign = 'º'
         for (let i = 0; i < surnameUpperCase.length; i++) {
             var num = i + 1
-            var coma 
-            if (num == surnameUpperCase.length) {
-                coma = ''
-            }   else {
+            var coma = ''
+            if (num != surnameUpperCase.length) {
                 coma = ', '
             }
             letters = letters + num + sign + surnameUpperCase.substr(i,1) + coma

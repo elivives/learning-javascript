@@ -106,7 +106,7 @@ describe('methods suit', function(){
         assert.equal(namePosition, '1ºE, 2ºL, 3ºI, 4ºS, 5ºA, 6ºB, 7ºE, 8ºT')
     })
 
-    it('d) Show each letter of your name with its position', function() {
+    it('d) Show each letter of your surname with its position', function() {
         var name = 'Elisabet Vives'
         var surnamePosition = ''
 
