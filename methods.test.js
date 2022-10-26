@@ -136,10 +136,10 @@ describe('methods suit', function(){
 
     it('e)show me the initials of your name and surname', function() {
         var name = 'Elisabet Vives'
-        var nameInitials = []
+        var nameInitials = ''
 
         nameInitials = methods.getYourInitialsArray(name)
 
-        assert.equal(nameInitials, ['E.V'])
+        assert.equal(nameInitials, 'E.V')
     })
 })

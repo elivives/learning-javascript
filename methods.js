@@ -104,14 +104,12 @@ const methods = {
     },
     getYourInitialsArray(name) {
         var nameArray = name.split('')
-        var nameInitial = nameArray.slice(0,1)
+        var nameInitial = nameArray[0]
         var dot = '.'
-        var surnameInitial = nameArray.slice(9,10)
-        var allInitials = nameInitial + dot + surnameInitial
-        
-        return allInitials.toString()
-      
-        
+        var surnamePosition = nameArray.indexOf(' ') + 1
+        var surnameInitial = nameArray[surnamePosition]
+
+        return nameInitial + dot + surnameInitial      
     },
     
 }
