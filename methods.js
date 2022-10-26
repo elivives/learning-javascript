@@ -55,6 +55,22 @@ const methods = {
         }
         return letters    
     },
+    getNamePositionArray(name) {
+        var nameFirst = name.slice(0, name.indexOf(' '))
+        var nameUppercase = nameFirst.toUpperCase()
+        var nameArray = nameUppercase.split('')
+        var letter = []
+        var sign = 'º'
+        for (let i = 0; i < nameArray.length; i++) {
+            var num = i + +1 
+            var coma = ''
+            if (num != nameArray.length) {
+                coma = ', '
+            }
+            letter.push(num + sign + nameArray[i] + coma)
+        }
+        return letter
+    },      
     getSurnamePosition(name) {
         var surnameFirst = name.slice(name.indexOf(' ') +1)
         var surnameUpperCase = surnameFirst.toUpperCase()
@@ -69,9 +85,33 @@ const methods = {
             letters = letters + num + sign + surnameUpperCase.substr(i,1) + coma
         }
         return letters
-    }
+    },
+    getSurnamePositionArray(name) {
+        var surnameFirst = name.slice(name.indexOf(' ') + 1)
+        var surnameUpperCase = surnameFirst.toUpperCase()
+        var surnameArray = surnameUpperCase.split('')
+        var letter = []
+        var sign = 'º'
+        for (let i = 0; i < surnameArray.length; i++) {
+            var num = i + 1
+            var coma = ''
+            if (num != surnameArray.length) {
+                coma = ', '
+            }
+            letter.push(num + sign + surnameArray[i] + coma)
+        }
+        return letter
+    },
+    getYourInitialsArray(name) {
+        var nameArray = name.split('')
+        var nameInitial = nameArray[0]
+        var dot = '.'
+        var surnamePosition = nameArray.indexOf(' ') + 1
+        var surnameInitial = nameArray[surnamePosition]
 
-
+        return nameInitial + dot + surnameInitial      
+    },
+    
 }
         
 

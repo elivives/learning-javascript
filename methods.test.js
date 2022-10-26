@@ -106,6 +106,16 @@ describe('methods suit', function(){
         assert.equal(namePosition, '1ºE, 2ºL, 3ºI, 4ºS, 5ºA, 6ºB, 7ºE, 8ºT')
     })
 
+    it('c-2)show each letter of your name with its position in array', function() {
+        var name = 'Elisabet Vives'
+        var namePosition = []
+
+        namePosition = methods.getNamePositionArray(name)
+
+        assert.deepEqual(namePosition, ['1ºE, ', '2ºL, ', '3ºI, ', '4ºS, ', '5ºA, ', '6ºB, ', '7ºE, ', '8ºT'])
+
+    })
+
     it('d) Show each letter of your surname with its position', function() {
         var name = 'Elisabet Vives'
         var surnamePosition = ''
@@ -113,5 +123,23 @@ describe('methods suit', function(){
         surnamePosition = methods.getSurnamePosition(name)
 
         assert.equal(surnamePosition, '1ºV, 2ºI, 3ºV, 4ºE, 5ºS')
+    })
+
+    it('d-2) show eash letters of your surname with its position in array', function(){
+        var name = 'Elisabet Vives'
+        var surnamePosition = []
+
+        surnamePosition = methods.getSurnamePositionArray(name)
+
+        assert.deepEqual(surnamePosition, ['1ºV, ', '2ºI, ', '3ºV, ', '4ºE, ', '5ºS'])
+    })
+
+    it('e)show me the initials of your name and surname', function() {
+        var name = 'Elisabet Vives'
+        var nameInitials = ''
+
+        nameInitials = methods.getYourInitialsArray(name)
+
+        assert.equal(nameInitials, 'E.V')
     })
 })
