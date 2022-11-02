@@ -122,6 +122,10 @@ const methods = {
         var city = personalData.splice(3)
         return personalData
     },
+    deleteYourName(personalData, name) {
+        var name = personalData.shift()
+        return personalData
+    },
 }
         
 

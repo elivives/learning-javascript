@@ -175,4 +175,12 @@ describe('methods suit', function(){
 
         assert.deepEqual(city, ['Elisabet', 'Vives', 27])
     })
+    it('j)remove the name and commit the changes', function(){
+        var personalData = ['Elisabet', 'Vives', 27]
+        var name = []
+
+        name = methods.deleteYourName(personalData, 'Elisabet')
+
+        assert.deepEqual(name, ['Vives', 27])
+    })
 })
