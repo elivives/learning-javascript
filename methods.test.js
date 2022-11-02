@@ -151,13 +151,20 @@ describe('methods suit', function(){
 
         assert.equal(nameAndAge, ['My name is Elisabet and I\'m 27 years old'])
     })
-    it('g) Show function to add your City to the array', function(){
+    it('g) Show function to add your City to the array', function() {
         var name = ['Elisabet', 'Vives', 27]
         var city = []
 
-        city = methods.isYourCity(name)
+        city = methods.addYourCity(name, 'Barcelona')
 
-        assert.deepEqual(city, ['Elisabet', 'Vives', 27, 'Barcelona'] )
+        assert.deepEqual(city, ['Elisabet', 'Vives', 27, 'Barcelona'])
+    })
+    it('g-1) Show function to add your City to the array', function() {
+        var name = ['Elisabet', 'Vives', 27]
+        var city = []
 
+        city = methods.addYourCity(name, 'Madrit')
+
+        assert.deepEqual(city, ['Elisabet', 'Vives', 27, 'Madrit'])
     })
 })
