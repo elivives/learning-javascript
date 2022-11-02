@@ -113,6 +113,10 @@ const methods = {
     },
     getYourNameAndAge(nameAndAge) {
       return (`My name is ${nameAndAge[0]} and I'm ${nameAndAge[2]} years old`)
+    },
+    isYourCity(name) {
+        var city = name.push('Barcelona')
+        return name
     }
     
 }
