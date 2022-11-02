@@ -111,6 +111,9 @@ const methods = {
 
         return nameInitial + dot + surnameInitial      
     },
+    getYourNameAndAge(nameAndAge) {
+      return (`My name is ${nameAndAge[0]} and I'm ${nameAndAge[2]} years old`)
+    }
     
 }
         

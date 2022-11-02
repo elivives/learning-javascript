@@ -142,4 +142,13 @@ describe('methods suit', function(){
 
         assert.equal(nameInitials, 'E.V')
     })
+
+    it('f) Entering your name in the first position, your last name in the second, and also add your age in another position. Show only your name and your age on the screen in a single message', function() {
+        var name = ['Elisabet', 'Vives', 27]
+        var nameAndAge = []
+
+        nameAndAge = methods.getYourNameAndAge(name)
+
+        assert.equal(nameAndAge, ['My name is Elisabet and I\'m 27 years old'])
+    })
 })
