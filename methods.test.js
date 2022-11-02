@@ -167,4 +167,12 @@ describe('methods suit', function(){
 
         assert.deepEqual(city, ['Elisabet', 'Vives', 27, 'Madrit'])
     })
+    it('h) remove the City variable and commit the changes.', function() {
+        var personalData = ['Elisabet', 'Vives', 27, 'Barcelona']
+        var city = []
+
+        city = methods.deleteYourCity(personalData, 'Barcelona')
+
+        assert.deepEqual(city, ['Elisabet', 'Vives', 27])
+    })
 })

@@ -117,8 +117,11 @@ const methods = {
     addYourCity(name, city) {
         var city = name.push(city)
         return name
-    }
-    
+    },
+    deleteYourCity(personalData, city) {
+        var city = personalData.splice(3)
+        return personalData
+    },
 }
         
 
