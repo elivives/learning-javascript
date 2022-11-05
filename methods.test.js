@@ -50,7 +50,7 @@ describe('methods suit', function(){
         assert.equal(expectedNameAndLastname, "Marta Vazquez, Vazquez")
     })
 
-    it('e) Change your name for Mr./Ms', function(){
+    it('e) Change your name for Mr. or Ms', function(){
         var name = 'Elisabet Vives'
         var expectedName = ''
 
@@ -182,5 +182,39 @@ describe('methods suit', function(){
         name = methods.deleteYourName(personalData, 'Elisabet')
 
         assert.deepEqual(name, ['Vives', 27])
+    })
+    it('k) re-enter my name in the first position', function(){
+        var personalData = ['Vives', 27]
+        var positionName = []
+
+        positionName = methods.whatIsYourName(personalData, 'Elisabet')
+
+        assert.deepEqual(positionName, ['Elisabet', 'Vives', 27])
+    })
+    it('l) numbers from 0 to 10 multiplied by two', function() {
+        var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        var multyByTwo = []
+
+        multyByTwo = methods.numbersMulty(numbers)
+
+        assert.deepEqual( multyByTwo, [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20])
+    })
+
+    it('l-1) Specify by what number each element should be multiplied', function() {
+        var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        var multy = []
+
+        multy = methods.numbersMultyDiv(numbers)
+
+        assert.deepEqual(multy, [0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30])
+    })
+
+    it('m) display them in reverse order?', function(){
+        var numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        var multy = []
+        
+        multy = methods.reversMultyDiv(numbers)
+
+        assert.deepEqual(multy, [30, 27, 24, 21, 18, 15, 12, 9, 6, 3, 0])
     })
 })
