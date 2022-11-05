@@ -12,7 +12,7 @@ const methods = {
         return name + ', ' + name.substr(name.indexOf(' ') +1)
     },
     isYourName(name) {
-        return 'Ms.' + ' ' + name.substr(0, name.indexOf(' '))
+        return ('Ms.' + ' ' + name.substr(0, name.indexOf(' ')))
     },
     getYourSurnameUppercase(name) {
         var surname = name.substr(name.indexOf(' ') + 1)
@@ -125,6 +125,27 @@ const methods = {
     deleteYourName(personalData, name) {
         var name = personalData.shift()
         return personalData
+    },
+    whatIsYourName(personalData, positionName) {
+        var positionName = personalData.splice(0, 0, 'Elisabet')
+        return personalData
+    },
+    numbersMulty(numbers) {
+        var multyByTwo = numbers.map(x => x * 2)
+        return multyByTwo 
+    },
+    numbersMultyDiv(numbers) {
+        var triple = numbers.map(function(x){
+            return x * 3;
+        })
+        return triple
+    },
+    reversMultyDiv(numbers) {
+        var triple = numbers.map(function(x){
+            return x * 3;
+        })
+         var revers = triple.reverse()
+         return revers 
     },
 }
         
